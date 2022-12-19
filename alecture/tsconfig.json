@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, // import * as React from 'react';  --> import React from 'react'
+    "sourceMap": true,
+    "lib": ["ES2020", "DOM"],
+    "jsx": "react",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "target": "es5",
+    "strict": true, // any 와 같은 타입을 방지하고자 사용
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      // ../../../components/example.js 파일 경로를 절대 경로처럼 불러올 수 있다.
+      "@hooks/*": ["hooks/*"],
+      "@components/*": ["components/*"],
+      "@layouts/*": ["layouts/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@typings/*": ["typings/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "moduleResolution": "Node",
+      "target": "es5",
+      "esModuleInterop": true
+    }
+  }
+}
