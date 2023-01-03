@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "esModuleInterop": true, // import * as React from 'react';  --> import React from 'react'
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "lib": ["ES2020", "DOM"],
     "jsx": "react",
